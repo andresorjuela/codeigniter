@@ -1,0 +1,134 @@
+/* Title: The Special Miami - Healthy Vegetarian Lunches
+Description: We deliver healthy food for people who want to eat a nutritious diet but don't have the time to propare it on their own. Our food is made from scratch using the healthiest and most fresh ingredients we find daily.
+Author URL: http://www.thespecialmiami.com
+Tags: healthy meals, vegetarian, healthy food, healthy meals delivered, miami, miami beach, 
+lunch, delivery, Design District, Downtown, Brickell, healthy lunches, vegetarian food, the special,
+the special miami, healthy vegetarian lunches, catering, healthy catering, health food, healthy options,
+vegetarian catering, business meeting catering, */
+
+// Types (font-family:'Roboto'; and font-size: 100%; font-weight: 300; in body{} section Layout)
+
+// Link to SASS guide http://sass-lang.com/guide
+
+@import 'textStyles';
+
+
+$main_color: #088A29;
+
+$button_color: #84bd68;
+
+// layout
+
+// header
+
+$selectHeader_top: 26px;
+$selectHeader_left: 158px;
+
+#pos_logo_question {
+  position: absolute;
+  left: $selectHeader_left;
+  top: $selectHeader_top;
+  z-index: 0; }
+  
+#pos_question {
+  position: absolute;
+  left: $selectHeader_left + 22px;
+  top: $selectHeader_top + 20px; }
+  
+#pos_select {
+  position: absolute;
+  left: $selectHeader_left + 12px;
+  top: $selectHeader_top + 59px; }
+
+// mixin for picture rounded corners
+@mixin border-radius($radius) 
+{
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin transition-opacity($time) 
+{
+	position:absolute;
+	-webkit-transition: opacity $time ease-in-out;
+	-moz-transition: opacity $time ease-in-out;
+	-o-transition: opacity $time ease-in-out;
+	transition: opacity $time ease-in-out;
+}
+
+$select_top: 6px;
+$select_left: 125px;
+
+#pos_veg_pic, #pos_gluten_free_pic, #pos_vegan_pic, #pos_pescatarian_pic {
+  @include transition-opacity(1s); }
+
+#pos_veg_pic img {
+  left: $select_left;
+  top: $select_top; 
+  @include transition-opacity(1s);
+  @include border-radius(12px);}
+  
+#pos_gluten_free_pic img {
+  left: $select_left;
+  top: $select_top + 300px;  
+  @include transition-opacity(1s);
+  @include border-radius(12px); }
+  
+#pos_vegan_pic img {
+  left: $select_left + 360px;
+  top: $select_top + 2px; 
+  @include transition-opacity(1s);
+  @include border-radius(12px);}
+  
+#pos_pescatarian_pic img {
+  left: $select_left + 360px;
+  top: $select_top + 300px;
+  @include transition-opacity(1s);
+  @include border-radius(12px); }
+
+#pos_veg_pic img.top:hover, #pos_gluten_free_pic img.top:hover, #pos_vegan_pic img.top:hover, #pos_pescatarian_pic img.top:hover {
+  opacity: 0; }
+
+#pos_veg_pic img.bottom:active, #pos_gluten_free_pic img.bottom:active, #pos_vegan_pic img.bottom:active, #pos_pescatarian_pic img.bottom:active {
+  img_top: opacity=100; }
+  
+  
+#wrapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto 0; }
+  
+header {
+  width: 100%;
+  padding: 0; }
+
+#core {
+  position: relative;
+  display: block;
+  clear: both;
+  margin-bottom: 20px; }
+  
+section#left {
+  width: 460px;}
+
+section#right {
+  width: 460px; }
+  
+#question {
+  position: relative;
+  float: left;
+  margin: 0 0 0 100px;
+  width: 800px;
+  height: 130px; }
+  
+.buttonSubmitHide {
+ display: none;
+}
+  
+
+
+
+  
+

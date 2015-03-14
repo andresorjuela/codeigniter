@@ -1,0 +1,165 @@
+/* Title: The Special Miami - Healthy Vegetarian Lunches
+Description: We deliver healthy food for people who want to eat a nutritious diet but don't have the time to propare it on their own. Our food is made from scratch using the healthiest and most fresh ingredients we find daily.
+Author URL: http://www.thespecialmiami.com
+Tags: healthy meals, vegetarian, healthy food, healthy meals delivered, miami, miami beach, 
+lunch, delivery, Design District, Downtown, Brickell, healthy lunches, vegetarian food, the special,
+the special miami, healthy vegetarian lunches, catering, healthy catering, health food, healthy options,
+vegetarian catering, business meeting catering, */
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 100%; }
+
+p {
+  color: black;
+  margin: 0;
+  padding: 0;
+  line-height: 125%; }
+
+.p_green {
+  color: green; }
+
+.p_white {
+  color: white; }
+
+.p_bold {
+  font-weight: 400; }
+
+.p_small {
+  color: green;
+  font-size: 80%; }
+
+h1, h2, h3, h4, h5 {
+  color: green;
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
+
+.h2_thin {
+  font-weight: 100;
+  font-size: 130%; }
+
+.h1_thin {
+  font-weight: 100; }
+
+h5 {
+  font-size: 80%; }
+
+a:link, a:visited, a:hover, a:active {
+  color: green;
+  text-decoration: none; }
+
+ul, li {
+  text-decoration: none; }
+
+#pos_logo_question {
+  position: absolute;
+  left: 158px;
+  top: 26px;
+  z-index: 0; }
+
+#pos_question {
+  position: absolute;
+  left: 180px;
+  top: 46px; }
+
+#pos_select {
+  position: absolute;
+  left: 170px;
+  top: 85px; }
+
+#pos_veg_pic, #pos_gluten_free_pic, #pos_vegan_pic, #pos_pescatarian_pic {
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
+
+#pos_veg_pic img {
+  left: 125px;
+  top: 6px;
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px; }
+
+#pos_gluten_free_pic img {
+  left: 125px;
+  top: 306px;
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px; }
+
+#pos_vegan_pic img {
+  left: 485px;
+  top: 8px;
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px; }
+
+#pos_pescatarian_pic img {
+  left: 485px;
+  top: 306px;
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px; }
+
+#pos_veg_pic img.top:hover, #pos_gluten_free_pic img.top:hover, #pos_vegan_pic img.top:hover, #pos_pescatarian_pic img.top:hover {
+  opacity: 0; }
+
+#pos_veg_pic img.bottom:active, #pos_gluten_free_pic img.bottom:active, #pos_vegan_pic img.bottom:active, #pos_pescatarian_pic img.bottom:active {
+  img_top: opacity=100; }
+
+#wrapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto 0; }
+
+header {
+  width: 100%;
+  padding: 0; }
+
+#core {
+  position: relative;
+  display: block;
+  clear: both;
+  margin-bottom: 20px; }
+
+section#left {
+  width: 460px; }
+
+section#right {
+  width: 460px; }
+
+#question {
+  position: relative;
+  float: left;
+  margin: 0 0 0 100px;
+  width: 800px;
+  height: 130px; }
+
+.buttonSubmitHide {
+  display: none; }

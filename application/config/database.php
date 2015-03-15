@@ -79,7 +79,7 @@ if ($currentServer == 'local')
 		$db['default']['hostname'] = 'localhost';
 		$db['default']['username'] = 'root';
 		$db['default']['password'] = 'root';
-		$db['default']['database'] = 'gsmiamidb';
+		$db['default']['database'] = 'thespecialmiamdb';
 		$db['default']['dbdriver'] = 'mysql';
 		$db['default']['dbprefix'] = '';
 		$db['default']['pconnect'] = TRUE;

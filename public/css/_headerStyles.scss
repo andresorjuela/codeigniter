@@ -1,0 +1,258 @@
+$main_color: #088A29;
+
+header
+{
+	width: 100%;
+	padding: 0;
+}
+	
+#hgroup
+{
+	position:relative;
+	float: left;
+	margin:0 0 0 100px;
+	width:800px;
+	height:300px;
+}
+
+// top notice
+
+#pos_notice
+{
+	position:relative;
+	float: right;
+	margin:0 10px 0 0;
+	z-index: 1;
+}
+
+// main logo
+
+#pos_logo
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index: 0;
+}
+
+#pos_tagline
+{
+	position:absolute;
+	left:230px;
+	top:106px;
+}
+	
+#pos_web_address
+{
+	position:absolute;
+	left:231px;
+	top:145px;
+}
+		
+#pos_delivery_only
+{
+	position:absolute;
+	left:512px;
+	top:190px;
+}
+
+#pos_snail
+{
+	position:absolute;
+	left:675px;
+	top:40px;
+}
+
+// aside buttons
+
+aside 
+{
+	float: right;
+	width: 4.2%;
+	height: 240px;
+}
+
+#aside_group
+{
+	position:relative;
+	width:40px;
+	height:240px;
+}
+
+@mixin aside-button-pos($num) 
+{
+	position:absolute;
+	left:0px;
+	top:45*$num;
+}
+
+@mixin transition-opacity($time) 
+{
+	-webkit-transition: opacity $time ease-in-out;
+	-moz-transition: opacity $time ease-in-out;
+	-o-transition: opacity $time ease-in-out;
+	transition: opacity $time ease-in-out;
+}
+
+@mixin border-radius($radius) 
+{
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+#pos_yelp img, #pos_facebook img, #pos_twitter img, #pos_tripadvisor img, #pos_happycow img, #pos_instagram img
+{
+	@include aside-button-pos(0px);
+	@include transition-opacity(0.5s);
+	@include border-radius(3px);
+}
+	
+#pos_yelp img.top:hover, #pos_facebook img.top:hover, #pos_twitter img.top:hover, #pos_tripadvisor img.top:hover, #pos_happycow img.top:hover, #pos_instagram img.top:hover
+{
+	opacity:0;
+}
+
+#pos_yelp
+{
+	@include aside-button-pos(0px);
+}
+
+#pos_facebook 
+{
+	@include aside-button-pos(1px);
+}
+
+#pos_instagram 
+{
+	@include aside-button-pos(2px);
+}
+
+#pos_twitter
+{
+	@include aside-button-pos(3px);
+}
+	
+#pos_tripadvisor
+{
+	@include aside-button-pos(4px);
+}
+	
+#pos_happycow 
+{
+	@include aside-button-pos(5px);
+}
+
+// email signup
+
+#pos_dailyEmail
+{
+	position:absolute;
+	width: 415px;
+	height: 30px;
+	top: 275px;
+	left: 545px;
+	overflow: hidden;
+}
+
+// navigation
+
+nav 
+{
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+nav img
+{
+	width: 960px;
+	height: 2px;
+	border: 0px;
+	margin: 0;
+	padding: 5px 0;
+	font-size: 0;
+}
+
+nav ul
+{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+nav li 
+{
+	display: inline;
+	padding: 0px 40px 0px 40px;
+	margin: 0;
+}
+
+nav h2 #current 
+{
+	font-weight: 100;
+}
+
+// footer
+
+#footer
+{
+	padding-top: 50px;
+	clear: both;
+	position: relative;
+}
+
+#bottom_box
+{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background-color: $main_color;
+	@include border-radius(5px);
+}
+
+#phone
+{
+	float: left;
+	padding: 10px 0 0 8px;
+	font-style:normal;
+}
+
+a[href^=tel]{
+    color:inherit;
+    text-decoration:none;
+}
+
+#URL
+{
+	float: left;
+	text-align:center;
+	margin-left: 200px;
+	padding: 10px 0 0 0;
+	font-style:normal;
+}
+
+#email
+{
+	float: right;
+	font-style:normal;
+	padding: 10px 9px 0 0;
+}
+
+#login
+{
+	position: relative;
+	width: 100%;
+	height: 20px;
+	padding: 0;
+	display: block;
+}
+
+#login li
+{
+	display: inline;
+}
